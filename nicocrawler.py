@@ -29,15 +29,16 @@ for site in data['sites']:
 	# get UserComments count
 	lines = res.split('\n')
 	for line in lines:
-		if 'UserComments' in line:
+		if re.match(userComments, line):
 			commentCount = re.sub(userComments, r'\1', line)
+			break
 
-			# update count
-			if site.has_key('commentCount') == False:
-				site['commentCount'] = 0
-			if commentCount != site['commentCount']:
-				print "%s %s->%s" % (site['title'], site['commentCount'], commentCount)
-			site['commentCount'] = commentCount
+	# update count
+	if site.has_key('commentCount') == False:
+		site['commentCount'] = 0
+	if commentCount != site['commentCount']:
+		print "%s %s->%s" % (site['title'], site['commentCount'], commentCount)
+	site['commentCount'] = commentCount
 
 # write json
 file = open('nicocrawler.json', 'w')
