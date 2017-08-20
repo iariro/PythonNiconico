@@ -45,7 +45,7 @@ for jsonfile in sys.argv[1:]:
 		if site.has_key('commentCount') == False:
 			site['commentCount'] = 0
 		if commentCount != site['commentCount']:
-			print "%s %s->%s" % (site['title'], site['commentCount'], commentCount)
+			print "\t%s %s->%s" % (site['title'], site['commentCount'], commentCount)
 		site['commentCount'] = commentCount
 
 	# write json
