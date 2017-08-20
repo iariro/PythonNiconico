@@ -4,43 +4,51 @@ import datetime
 import json
 import re
 import subprocess
+import sys
 
-# read json
-file = open('nicocrawler.json', 'r')
-data = json.load(file)
-file.close()
+if len(sys.argv) < 2:
+	print 'Usage: jsonfile'
+	exit()
 
-# update datetime
-pdatetime = "-"
-datetime = datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S")
-if data.has_key('datetime'):
-	pdatetime = data['datetime']
-print '%s -> %s' % (pdatetime, datetime)
-data['datetime'] = datetime 
+for jsonfile in sys.argv[1:]:
+	print jsonfile
 
-userComments = r'.* ([0-9]*) UserComments.*'
+	# read json
+	file = open(jsonfile, 'r')
+	data = json.load(file)
+	file.close()
 
-for site in data['sites']:
-	# get HTML
-	url = 'http://www.nicovideo.jp/watch/%s' % site['url']
-	curlCommand = [ 'curl', '-s',  url]
-	res = subprocess.check_output(curlCommand)
+	# update datetime
+	pupdatetime = "-"
+	updatetime = datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S")
+	if data.has_key('datetime'):
+		pupdatetime = data['datetime']
+	print '%s -> %s' % (pupdatetime, updatetime)
+	data['datetime'] = updatetime 
 
-	# get UserComments count
-	lines = res.split('\n')
-	for line in lines:
-		if re.match(userComments, line):
-			commentCount = re.sub(userComments, r'\1', line)
-			break
+	userComments = r'.* ([0-9]*) UserComments.*'
 
-	# update count
-	if site.has_key('commentCount') == False:
-		site['commentCount'] = 0
-	if commentCount != site['commentCount']:
-		print "%s %s->%s" % (site['title'], site['commentCount'], commentCount)
-	site['commentCount'] = commentCount
+	for site in data['sites']:
+		# get HTML
+		url = 'http://www.nicovideo.jp/watch/%s' % site['url']
+		curlCommand = [ 'curl', '-s',  url]
+		res = subprocess.check_output(curlCommand)
 
-# write json
-file = open('nicocrawler.json', 'w')
-json.dump(data, file, indent=4)
-file.close()
+		# get UserComments count
+		lines = res.split('\n')
+		for line in lines:
+			if re.match(userComments, line):
+				commentCount = re.sub(userComments, r'\1', line)
+				break
+
+		# update count
+		if site.has_key('commentCount') == False:
+			site['commentCount'] = 0
+		if commentCount != site['commentCount']:
+			print "%s %s->%s" % (site['title'], site['commentCount'], commentCount)
+		site['commentCount'] = commentCount
+
+	# write json
+	file = open(jsonfile, 'w')
+	json.dump(data, file, indent=4)
+	file.close()
