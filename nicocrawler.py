@@ -35,6 +35,7 @@ for jsonfile in sys.argv[1:]:
 		res = subprocess.check_output(curlCommand)
 
 		# get UserComments count
+		commentCount = None
 		lines = res.split('\n')
 		for line in lines:
 			if re.match(userComments, line):
@@ -42,6 +43,10 @@ for jsonfile in sys.argv[1:]:
 				break
 
 		# update count
+		if commentCount == None:
+			print "\t%s comment get error" % site['title']
+			continue
+
 		if site.has_key('commentCount') == False:
 			site['commentCount'] = 0
 		if commentCount != site['commentCount']:
