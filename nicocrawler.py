@@ -1,9 +1,10 @@
 #!/usr/bin/python
 
+import urllib
+from bs4 import BeautifulSoup
 import datetime
 import json
 import re
-import subprocess
 import sys
 import time
 
@@ -28,40 +29,37 @@ for jsonfile in sys.argv[1:]:
 	data['datetime'] = updatetime 
 
 	userComments1 = r'.*viewCount&quot;:([0-9]*),.*commentCount&quot;:([0-9]*).*'
-	userComments2 = r'.*"([0-9]*) UserPlays, ([0-9]*) UserComments".*'
+	userComments2 = r'([0-9]*) UserPlays, ([0-9]*) UserComments'
 
 	for site in data['sites']:
 		time.sleep(0)
 
 		# get HTML
 		url = 'http://www.nicovideo.jp/watch/%s' % site['url']
-		curlCommand = [ 'curl', '-s',  url]
-		res = subprocess.check_output(curlCommand)
+		html = urllib.urlopen(url)
+		soup = BeautifulSoup(html, "html.parser")
 
 		# get UserComments count
 		playCount = None
 		commentCount = None
-		lines = res.split('\n')
-		for line in lines:
-			if re.match(userComments1, line):
-				playCount = re.sub(userComments1, r'\1', line)
-				commentCount = re.sub(userComments1, r'\2', line)
-				break
-			elif re.match(userComments2, line):
-				playCount = re.sub(userComments2, r'\1', line)
-				commentCount = re.sub(userComments2, r'\2', line)
-				break
+		metas = soup.find_all('meta', attrs={'itemprop':'interactionCount'})
+		for meta in metas:
+			match = re.search(userComments2, meta.get('content'))
+			if match != None:
+				playCount = match.group(1)
+				commentCount = match.group(2)
 
-		print site['title'], playCount, commentCount
+		#print site['title'], playCount, commentCount
 
 		# update count
 		if commentCount == None:
 			print "\t%s comment get error" % site['title']
 
 			file2 = open('dump.html', 'w')
-			file2.write(res)
+			file2.write(str(html))
 			file2.close()
 
+			break
 			continue
 
 		if site.has_key('playCount') == False:

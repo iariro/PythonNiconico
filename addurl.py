@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+import urllib
+from bs4 import BeautifulSoup
 import datetime
 import json
 import re
@@ -11,30 +13,30 @@ if len(sys.argv) < 4:
 	exit()
 
 (jsonfile,title,url) = sys.argv[1:4]
-movieid = re.sub('http://www.nicovideo.jp/watch/', '', url)
+movieid = re.sub('https*://www.nicovideo.jp/watch/', '', url)
 
 # read json
 file = open(jsonfile, 'r')
 data = json.load(file)
 file.close()
 
-# userComments = r'.*"([0-9]*) UserPlays, ([0-9]*) UserComments".*'
-userComments = r'.*viewCount&quot;:([0-9]*),.*commentCount&quot;:([0-9]*).*'
+userComments = r'([0-9]*) UserPlays, ([0-9]*) UserComments.*'
+# userComments = r'.*viewCount&quot;:([0-9]*),.*commentCount&quot;:([0-9]*).*'
 
 # get HTML
 url = 'http://www.nicovideo.jp/watch/%s' % movieid
-curlCommand = [ 'curl', '-s',  url]
-res = subprocess.check_output(curlCommand)
+html = urllib.urlopen(url)
+soup = BeautifulSoup(html, "html.parser")
 
 # get UserComments count
 playCount = None
 commentCount = None
-lines = res.split('\n')
-for line in lines:
-	if re.match(userComments, line):
-		playCount = re.sub(userComments, r'\1', line)
-		commentCount = re.sub(userComments, r'\2', line)
-		break
+metas = soup.find_all('meta', attrs={'itemprop':'interactionCount'})
+for meta in metas:
+	match = re.search(userComments, meta.get('content'))
+	if match != None:
+		playCount = match.group(1)
+		commentCount = match.group(2)
 
 # update count
 if commentCount == None:
