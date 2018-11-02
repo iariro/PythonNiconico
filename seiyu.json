@@ -1,389 +1,605 @@
 {
     "sites": [
         {
+            "url": "1540819864", 
+            "commentCount": "359", 
+            "playCount": "8390", 
+            "title": "adlib238"
+        }, 
+        {
+            "url": "1540205403", 
+            "commentCount": "332", 
+            "playCount": "12096", 
+            "title": "adlib237"
+        }, 
+        {
+            "url": "1539612188", 
+            "commentCount": "371", 
+            "playCount": "12196", 
+            "title": "adlib236"
+        }, 
+        {
+            "url": "1538996825", 
+            "commentCount": "400", 
+            "playCount": "14060", 
+            "title": "adlib235"
+        }, 
+        {
+            "url": "1538395563", 
+            "commentCount": "353", 
+            "playCount": "14084", 
+            "title": "adlib234"
+        }, 
+        {
+            "url": "1537783682", 
+            "commentCount": "327", 
+            "playCount": "13143", 
+            "title": "adlib233"
+        }, 
+        {
+            "url": "so33871279", 
+            "commentCount": "406", 
+            "playCount": "14275", 
+            "title": "adlib232"
+        }, 
+        {
+            "url": "1536577148", 
+            "commentCount": "514", 
+            "playCount": "15643", 
+            "title": "adlib231"
+        }, 
+        {
+            "url": "1535977984", 
+            "commentCount": "493", 
+            "playCount": "14988", 
+            "title": "adlib230"
+        }, 
+        {
+            "url": "so33759339", 
+            "commentCount": "452", 
+            "playCount": "14654", 
+            "title": "adlib229"
+        }, 
+        {
+            "url": "sm33475548", 
+            "commentCount": "11", 
+            "playCount": "1539", 
+            "title": "sphere471"
+        }, 
+        {
+            "url": "so33721984", 
+            "commentCount": "390", 
+            "playCount": "14834", 
+            "title": "adlib228"
+        }, 
+        {
+            "url": "1534162628", 
+            "commentCount": "379", 
+            "playCount": "15420", 
+            "title": "adlib227"
+        }, 
+        {
+            "url": "sm16075336", 
+            "commentCount": "23", 
+            "playCount": "755", 
+            "title": "radiame8512"
+        }, 
+        {
+            "url": "sm32600532", 
+            "commentCount": "5", 
+            "playCount": "1334", 
+            "title": "planetsphere447"
+        }, 
+        {
+            "url": "1533552006", 
+            "commentCount": "363", 
+            "playCount": "14333", 
+            "title": "adlib226"
+        }, 
+        {
+            "url": "1532941925", 
+            "commentCount": "398", 
+            "playCount": "14350", 
+            "title": "adlib225"
+        }, 
+        {
+            "url": "1532342171", 
+            "commentCount": "431", 
+            "playCount": "15082", 
+            "title": "adlib224"
+        }, 
+        {
+            "url": "1531739769", 
+            "commentCount": "310", 
+            "playCount": "14439", 
+            "title": "adlib223"
+        }, 
+        {
+            "url": "1531120268", 
+            "commentCount": "420", 
+            "playCount": "15125", 
+            "title": "adlib222"
+        }, 
+        {
+            "url": "1530522792", 
+            "commentCount": "391", 
+            "playCount": "15678", 
+            "title": "adlib221"
+        }, 
+        {
+            "url": "1529923992", 
+            "commentCount": "536", 
+            "playCount": "15679", 
+            "title": "adlib220"
+        }, 
+        {
+            "url": "1529319744", 
+            "commentCount": "458", 
+            "playCount": "16023", 
+            "title": "adlib219"
+        }, 
+        {
+            "url": "1528714703", 
+            "commentCount": "437", 
+            "playCount": "16255", 
+            "title": "adlib218"
+        }, 
+        {
+            "url": "1528104682", 
+            "commentCount": "432", 
+            "playCount": "15729", 
+            "title": "adlib217"
+        }, 
+        {
+            "url": "1527505282", 
+            "commentCount": "365", 
+            "playCount": "16181", 
+            "title": "adlib216"
+        }, 
+        {
+            "url": "1526903492", 
+            "commentCount": "547", 
+            "playCount": "16179", 
+            "title": "adlib215"
+        }, 
+        {
+            "url": "1526301199", 
+            "commentCount": "435", 
+            "playCount": "16301", 
+            "title": "adlib214"
+        }, 
+        {
+            "url": "1525690142", 
+            "commentCount": "568", 
+            "playCount": "17485", 
+            "title": "adlib213"
+        }, 
+        {
+            "url": "1525086914", 
+            "commentCount": "486", 
+            "playCount": "17888", 
+            "title": "adlib212"
+        }, 
+        {
+            "url": "so33097434", 
+            "commentCount": "402", 
+            "playCount": "17695", 
+            "title": "adlib211"
+        }, 
+        {
+            "url": "so33061947", 
+            "commentCount": "608", 
+            "playCount": "18755", 
+            "title": "adlib210"
+        }, 
+        {
+            "url": "1523267717", 
+            "commentCount": "504", 
+            "playCount": "18560", 
+            "title": "adlib209"
+        }, 
+        {
+            "url": "1522669522", 
+            "commentCount": "475", 
+            "playCount": "17630", 
+            "title": "adlib208"
+        }, 
+        {
+            "url": "1522066397", 
+            "commentCount": "532", 
+            "playCount": "18459", 
+            "title": "adlib207"
+        }, 
+        {
+            "url": "1521458835", 
+            "commentCount": "417", 
+            "playCount": "18270", 
+            "title": "adlib206"
+        }, 
+        {
+            "url": "1520852423", 
+            "commentCount": "607", 
+            "playCount": "20137", 
+            "title": "adlib205"
+        }, 
+        {
             "url": "1520253677", 
-            "commentCount": "499", 
-            "playCount": "12115", 
+            "commentCount": "605", 
+            "playCount": "20131", 
             "title": "adlib204"
         }, 
         {
             "url": "sm32600532", 
             "commentCount": "5", 
-            "playCount": "917", 
+            "playCount": "1334", 
             "title": "sphere447"
         }, 
         {
             "url": "1519647735", 
-            "commentCount": "506", 
-            "playCount": "14413", 
+            "commentCount": "537", 
+            "playCount": "18646", 
             "title": "adlib203"
         }, 
         {
             "url": "1519044614", 
-            "commentCount": "424", 
-            "playCount": "15612", 
+            "commentCount": "453", 
+            "playCount": "19198", 
             "title": "adlib202"
         }, 
         {
             "url": "1518440365", 
-            "commentCount": "490", 
-            "playCount": "15759", 
+            "commentCount": "525", 
+            "playCount": "19192", 
             "title": "adlib201"
         }, 
         {
             "url": "so32692499", 
-            "commentCount": "611", 
-            "playCount": "17818", 
+            "commentCount": "626", 
+            "playCount": "21327", 
             "title": "adlib200"
         }, 
         {
             "url": "sm28362090", 
-            "commentCount": "1252", 
-            "playCount": "52682", 
+            "commentCount": "1254", 
+            "playCount": "54140", 
             "title": "adlib100"
         }, 
         {
             "url": "sm25843583", 
-            "commentCount": "1765", 
-            "playCount": "84740", 
+            "commentCount": "1767", 
+            "playCount": "86378", 
             "title": "adlib050"
         }, 
         {
             "url": "sm23781028", 
-            "commentCount": "2855", 
-            "playCount": "103976", 
+            "commentCount": "2864", 
+            "playCount": "105605", 
             "title": "adlib010"
         }, 
         {
             "url": "sm23316334", 
-            "commentCount": "6244", 
-            "playCount": "211510", 
+            "commentCount": "6321", 
+            "playCount": "215882", 
             "title": "adlib001"
         }, 
         {
             "url": "so32658628", 
-            "commentCount": "728", 
-            "playCount": "16762", 
+            "commentCount": "739", 
+            "playCount": "19492", 
             "title": "adlib199"
         }, 
         {
             "url": "1516622837", 
-            "commentCount": "492", 
-            "playCount": "17792", 
+            "commentCount": "503", 
+            "playCount": "20637", 
             "title": "adlib198"
         }, 
         {
             "url": "1516021572", 
-            "commentCount": "614", 
-            "playCount": "18346", 
+            "commentCount": "633", 
+            "playCount": "20832", 
             "title": "adlib197"
         }, 
         {
             "url": "sm32570330", 
-            "commentCount": "76", 
-            "playCount": "7033", 
+            "commentCount": "78", 
+            "playCount": "7864", 
             "title": "hatsuraji321"
         }, 
         {
             "url": "1515410240", 
-            "commentCount": "423", 
-            "playCount": "19347", 
+            "commentCount": "427", 
+            "playCount": "21782", 
             "title": "adlib196"
         }, 
         {
             "url": "sm32523706", 
-            "commentCount": "249", 
-            "playCount": "6696", 
+            "commentCount": "253", 
+            "playCount": "7863", 
             "title": "arietion144"
         }, 
         {
             "url": "sm32515627", 
-            "commentCount": "46", 
-            "playCount": "5744", 
+            "commentCount": "49", 
+            "playCount": "6315", 
             "title": "puchimire247"
         }, 
         {
             "url": "1514710574", 
-            "commentCount": "1237", 
-            "playCount": "22625", 
+            "commentCount": "1248", 
+            "playCount": "25336", 
             "title": "adlib195"
         }, 
         {
             "url": "1471863586", 
-            "commentCount": "1447", 
-            "playCount": "39864", 
+            "commentCount": "1450", 
+            "playCount": "41064", 
             "title": "adlib124"
         }, 
         {
             "url": "1514204710", 
-            "commentCount": "381", 
-            "playCount": "20008", 
+            "commentCount": "386", 
+            "playCount": "22448", 
             "title": "adlib194"
         }, 
         {
             "url": "1512994996", 
-            "commentCount": "657", 
-            "playCount": "19630", 
+            "commentCount": "663", 
+            "playCount": "21457", 
             "title": "adlib192"
         }, 
         {
             "url": "1513592142", 
-            "commentCount": "641", 
-            "playCount": "18162", 
+            "commentCount": "646", 
+            "playCount": "20212", 
             "title": "adlib193"
         }, 
         {
             "url": "sm32205337", 
-            "commentCount": "275", 
-            "playCount": "19298", 
+            "commentCount": "284", 
+            "playCount": "21284", 
             "title": "suzakinishi rainbow"
         }, 
         {
             "url": "1508409927", 
             "commentCount": "255", 
-            "playCount": "3379", 
+            "playCount": "3582", 
             "title": "futapathy53"
         }, 
         {
             "url": "1507637908", 
-            "commentCount": "1126", 
-            "playCount": "19915", 
+            "commentCount": "1150", 
+            "playCount": "21614", 
             "title": "delicate106"
         }, 
         {
             "url": "1507030467", 
-            "commentCount": "1160", 
-            "playCount": "25509", 
+            "commentCount": "1181", 
+            "playCount": "27168", 
             "title": "delicate105"
         }, 
         {
             "url": "1512389897", 
-            "commentCount": "575", 
-            "playCount": "18823", 
+            "commentCount": "577", 
+            "playCount": "20600", 
             "title": "adlib191"
         }, 
         {
             "url": "1511779814", 
             "commentCount": "528", 
-            "playCount": "19648", 
+            "playCount": "21673", 
             "title": "adlib190"
         }, 
         {
             "url": "1511176818", 
-            "commentCount": "579", 
-            "playCount": "20854", 
+            "commentCount": "583", 
+            "playCount": "22478", 
             "title": "adlib189"
         }, 
         {
             "url": "1510575735", 
-            "commentCount": "681", 
-            "playCount": "19682", 
+            "commentCount": "685", 
+            "playCount": "21529", 
             "title": "adlib188"
         }, 
         {
             "url": "1509965899", 
-            "commentCount": "510", 
-            "playCount": "19855", 
+            "commentCount": "518", 
+            "playCount": "21626", 
             "title": "adlib187"
         }, 
         {
             "url": "1509367490", 
-            "commentCount": "530", 
-            "playCount": "19801", 
+            "commentCount": "531", 
+            "playCount": "21395", 
             "title": "adlib186"
         }, 
         {
             "url": "1508757327", 
             "commentCount": "560", 
-            "playCount": "18923", 
+            "playCount": "20547", 
             "title": "adlib185"
         }, 
         {
             "url": "1508158755", 
-            "commentCount": "447", 
-            "playCount": "20300", 
+            "commentCount": "451", 
+            "playCount": "21916", 
             "title": "adlib184"
         }, 
         {
             "url": "1507554735", 
-            "commentCount": "532", 
-            "playCount": "21463", 
+            "commentCount": "534", 
+            "playCount": "22968", 
             "title": "adlib183"
         }, 
         {
             "url": "1506942972", 
-            "commentCount": "371", 
-            "playCount": "21768", 
+            "commentCount": "372", 
+            "playCount": "23195", 
             "title": "adlib182"
         }, 
         {
             "url": "1506343211", 
             "commentCount": "562", 
-            "playCount": "20965", 
+            "playCount": "22420", 
             "title": "adlib181"
         }, 
         {
             "url": "1505737584", 
-            "commentCount": "812", 
-            "playCount": "24216", 
+            "commentCount": "813", 
+            "playCount": "26000", 
             "title": "adlib180"
         }, 
         {
             "url": "1505128452", 
-            "commentCount": "773", 
-            "playCount": "24573", 
+            "commentCount": "774", 
+            "playCount": "26057", 
             "title": "adlib179"
         }, 
         {
             "url": "1504526721", 
             "commentCount": "511", 
-            "playCount": "22747", 
+            "playCount": "24088", 
             "title": "adlib178"
         }, 
         {
             "url": "sm32279256", 
             "commentCount": "76", 
-            "playCount": "7427", 
+            "playCount": "7945", 
             "title": "hitokana313"
         }, 
         {
             "url": "sm32125564", 
-            "commentCount": "77", 
-            "playCount": "7507", 
+            "commentCount": "78", 
+            "playCount": "7986", 
             "title": "hitokana309"
         }, 
         {
             "url": "sm32050102", 
             "commentCount": "50", 
-            "playCount": "7787", 
+            "playCount": "8240", 
             "title": "hitokana307"
         }, 
         {
             "url": "sm31924781", 
-            "commentCount": "52", 
-            "playCount": "7482", 
+            "commentCount": "56", 
+            "playCount": "7993", 
             "title": "hitokana304"
         }, 
         {
             "url": "sm31845183", 
-            "commentCount": "43", 
-            "playCount": "7693", 
+            "commentCount": "45", 
+            "playCount": "8159", 
             "title": "hitokana302"
         }, 
         {
-            "url": "sm31644726", 
-            "commentCount": "72", 
-            "playCount": "8241", 
-            "title": "hitokana297"
-        }, 
-        {
             "url": "sm32144192", 
-            "commentCount": "186", 
-            "playCount": "10194", 
+            "commentCount": "193", 
+            "playCount": "11194", 
             "title": "puchimire237"
         }, 
         {
             "url": "sm32029376", 
-            "commentCount": "82", 
-            "playCount": "7442", 
+            "commentCount": "83", 
+            "playCount": "8191", 
             "title": "puchimire234"
         }, 
         {
             "url": "sm31988241", 
-            "commentCount": "72", 
-            "playCount": "7105", 
+            "commentCount": "73", 
+            "playCount": "7828", 
             "title": "puchimire233"
         }, 
         {
             "url": "sm31905463", 
-            "commentCount": "80", 
-            "playCount": "6118", 
+            "commentCount": "81", 
+            "playCount": "6548", 
             "title": "puchimire231"
         }, 
         {
             "url": "sm31823056", 
             "commentCount": "76", 
-            "playCount": "7792", 
+            "playCount": "8541", 
             "title": "puchimire229"
         }, 
         {
             "url": "1503921553", 
             "commentCount": "450", 
-            "playCount": "12191", 
+            "playCount": "12197", 
             "title": "adlib177"
         }, 
         {
             "url": "sm32385293", 
             "commentCount": "101", 
-            "playCount": "6681", 
+            "playCount": "7326", 
             "title": "hatsuraji316"
         }, 
         {
             "url": "sm31804868", 
-            "commentCount": "57", 
-            "playCount": "7222", 
+            "commentCount": "58", 
+            "playCount": "7636", 
             "title": "hatsuraji301"
         }, 
         {
             "url": "sm31804682", 
             "commentCount": "104", 
-            "playCount": "8139", 
+            "playCount": "8586", 
             "title": "hitokana301"
         }, 
         {
             "url": "sm31783715", 
-            "commentCount": "73", 
-            "playCount": "7543", 
+            "commentCount": "76", 
+            "playCount": "8330", 
             "title": "puchimire228"
         }, 
         {
             "url": "sm31753658", 
             "commentCount": "222", 
-            "playCount": "7306", 
+            "playCount": "7679", 
             "title": "arietion124"
         }, 
         {
             "url": "1503312978", 
-            "commentCount": "583", 
-            "playCount": "21770", 
+            "commentCount": "586", 
+            "playCount": "23261", 
             "title": "adlib176"
         }, 
         {
             "url": "1502713503", 
-            "commentCount": "789", 
-            "playCount": "23334", 
+            "commentCount": "791", 
+            "playCount": "24689", 
             "title": "adlib175"
         }, 
         {
             "url": "sm31743734", 
             "commentCount": "68", 
-            "playCount": "6995", 
+            "playCount": "7600", 
             "title": "puchimire227"
         }, 
         {
             "url": "sm31765462", 
-            "commentCount": "82", 
-            "playCount": "9428", 
+            "commentCount": "83", 
+            "playCount": "9912", 
             "title": "hitokana300"
         }, 
         {
             "url": "sm31644726", 
-            "commentCount": "72", 
-            "playCount": "8241", 
+            "commentCount": "73", 
+            "playCount": "8599", 
             "title": "hitokana297"
         }, 
         {
             "url": "sm24799385", 
-            "commentCount": "646", 
-            "playCount": "20632", 
+            "commentCount": "651", 
+            "playCount": "21178", 
             "title": "mahouka15"
         }, 
         {
             "url": "sm1462711", 
             "commentCount": "1684", 
-            "playCount": "24247", 
+            "playCount": "24397", 
             "title": "dekopin5"
         }
     ], 
-    "datetime": "2018/03/10 01:34:50"
+    "datetime": "2018/11/02 23:16:48"
 }
