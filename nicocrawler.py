@@ -1,4 +1,3 @@
-#!/usr/bin/python
 
 import urllib
 from bs4 import BeautifulSoup
@@ -9,11 +8,11 @@ import sys
 import time
 
 if len(sys.argv) < 2:
-	print 'Usage: jsonfile'
+	print('Usage: jsonfile')
 	exit()
 
 for jsonfile in sys.argv[1:]:
-	print jsonfile
+	print(jsonfile)
 
 	# read json
 	file = open(jsonfile, 'r')
@@ -25,7 +24,7 @@ for jsonfile in sys.argv[1:]:
 	updatetime = datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S")
 	if data.has_key('datetime'):
 		pupdatetime = data['datetime']
-	print '%s -> %s' % (pupdatetime, updatetime)
+	print('%s -> %s' % (pupdatetime, updatetime))
 	data['datetime'] = updatetime 
 
 	userComments1 = r'.*viewCount&quot;:([0-9]*),.*commentCount&quot;:([0-9]*).*'
@@ -53,7 +52,7 @@ for jsonfile in sys.argv[1:]:
 
 		# update count
 		if commentCount == None:
-			print "\t%s comment get error" % site['title']
+			print("\t%s comment get error" % site['title'])
 
 			file2 = open('dump.html', 'w')
 			file2.write(str(html))
@@ -67,7 +66,7 @@ for jsonfile in sys.argv[1:]:
 		if site.has_key('commentCount') == False:
 			site['commentCount'] = 0
 		if commentCount != site['commentCount']:
-			print "\t%s %s->%s" % (site['title'], site['commentCount'], commentCount)
+			print("\t%s %s->%s" % (site['title'], site['commentCount'], commentCount))
 		site['playCount'] = playCount
 		site['commentCount'] = commentCount
 
