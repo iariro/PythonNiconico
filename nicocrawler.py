@@ -22,7 +22,7 @@ for jsonfile in sys.argv[1:]:
 	# update datetime
 	pupdatetime = "-"
 	updatetime = datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S")
-	if data.has_key('datetime'):
+	if 'datetime' in data:
 		pupdatetime = data['datetime']
 	print('%s -> %s' % (pupdatetime, updatetime))
 	data['datetime'] = updatetime 
@@ -35,7 +35,7 @@ for jsonfile in sys.argv[1:]:
 
 		# get HTML
 		url = 'http://www.nicovideo.jp/watch/%s' % site['url']
-		html = urllib.urlopen(url)
+		html = urllib.request.urlopen(url)
 		soup = BeautifulSoup(html, "html.parser")
 
 		# get UserComments count
@@ -61,9 +61,9 @@ for jsonfile in sys.argv[1:]:
 			break
 			continue
 
-		if site.has_key('playCount') == False:
+		if 'playCount' in site == False:
 			site['playCount'] = 0
-		if site.has_key('commentCount') == False:
+		if 'commentCount' in site == False:
 			site['commentCount'] = 0
 		if commentCount != site['commentCount']:
 			print("\t%s %s->%s" % (site['title'], site['commentCount'], commentCount))
