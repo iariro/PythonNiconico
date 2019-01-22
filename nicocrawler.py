@@ -1,11 +1,15 @@
+#!/usr/local/bin/python3
 
-import urllib
+import urllib.request
 from bs4 import BeautifulSoup
 import datetime
 import json
 import re
 import sys
 import time
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 if len(sys.argv) < 2:
 	print('Usage: jsonfile')
