@@ -1,15 +1,18 @@
-#!/usr/bin/python
+#!/usr/local/bin/python3
 
-import urllib
+import urllib.request
 from bs4 import BeautifulSoup
 import datetime
 import json
 import re
 import subprocess
 import sys
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 if len(sys.argv) < 4:
-	print 'Usage: jsonfile title url'
+	print('Usage: jsonfile title url')
 	exit()
 
 (jsonfile,title,url) = sys.argv[1:4]
@@ -25,7 +28,7 @@ userComments = r'([0-9]*) UserPlays, ([0-9]*) UserComments.*'
 
 # get HTML
 url = 'http://www.nicovideo.jp/watch/%s' % movieid
-html = urllib.urlopen(url)
+html = urllib.request.urlopen(url)
 soup = BeautifulSoup(html, "html.parser")
 
 # get UserComments count
@@ -40,7 +43,7 @@ for meta in metas:
 
 # update count
 if commentCount == None:
-	print "\t%s comment get error" % title
+	print("\t%s comment get error" % title)
 	exit()
 
 site = {}
@@ -56,4 +59,4 @@ file = open(jsonfile, 'w')
 json.dump(data, file, indent=4)
 file.close()
 
-print '%s %s %s %s added' % (title, movieid, playCount, commentCount)
+print('%s %s %s %s added' % (title, movieid, playCount, commentCount))
