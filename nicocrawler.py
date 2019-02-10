@@ -49,17 +49,28 @@ for jsonfile in sys.argv[1:]:
 		for meta in metas:
 			match = re.search(userComments2, meta.get('content'))
 			if match != None:
-				playCount = match.group(1)
-				commentCount = match.group(2)
+				playCount = int(match.group(1))
+				commentCount = int(match.group(2))
 
 		#print site['title'], playCount, commentCount
+
+		if commentCount == None:
+			metas = soup.find_all('script', attrs={'type':'application/ld+json'})
+			for meta in metas:
+				try:
+					js = json.loads(meta.string)
+					if 'interactionCount' in js and 'commentCount' in js:
+						playCount = js['interactionCount']
+						commentCount = js['commentCount']
+				except json.decoder.JSONDecodeError:
+					pass
 
 		# update count
 		if commentCount == None:
 			print("\t%s comment get error" % site['title'])
 
 			file2 = open('dump.html', 'w')
-			file2.write(str(html))
+			file2.write(str(soup))
 			file2.close()
 
 			break
@@ -69,7 +80,7 @@ for jsonfile in sys.argv[1:]:
 			site['playCount'] = 0
 		if 'commentCount' in site == False:
 			site['commentCount'] = 0
-		if commentCount != site['commentCount']:
+		if commentCount > int(site['commentCount']):
 			print("\t%s %s->%s" % (site['title'], site['commentCount'], commentCount))
 		site['playCount'] = playCount
 		site['commentCount'] = commentCount
