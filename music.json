@@ -2,64 +2,64 @@
     "sites": [
         {
             "url": "sm19235422",
-            "commentCount": "296",
-            "playCount": "25435",
+            "commentCount": 296,
+            "playCount": 25472,
             "title": "FF III"
         },
         {
             "url": "sm24844269",
-            "commentCount": "7",
-            "playCount": "653",
+            "commentCount": 7,
+            "playCount": 660,
             "title": "minel"
         },
         {
             "url": "sm11861303",
-            "commentCount": "62",
-            "playCount": "59248",
+            "commentCount": 62,
+            "playCount": 59526,
             "title": "exec_sol_fage"
         },
         {
             "url": "sm26053848",
-            "commentCount": "193",
-            "playCount": "7652",
+            "commentCount": 193,
+            "playCount": 7681,
             "title": "ikki"
         },
         {
             "url": "sm22088997",
-            "commentCount": "9",
-            "playCount": "1534",
+            "commentCount": 9,
+            "playCount": 1553,
             "title": "Metroid"
         },
         {
             "url": "sm27605728",
-            "commentCount": "491",
-            "playCount": "62951",
+            "commentCount": 491,
+            "playCount": 63099,
             "title": "DQ III ED"
         },
         {
             "url": "sm27760989",
-            "commentCount": "670",
-            "playCount": "103103",
+            "commentCount": 671,
+            "playCount": 103428,
             "title": "DQ III zoma"
         },
         {
             "url": "sm31517043",
-            "commentCount": "115",
-            "playCount": "9848",
+            "commentCount": 115,
+            "playCount": 9931,
             "title": "DQ II battle"
         },
         {
             "url": "sm725774",
-            "commentCount": "86",
-            "playCount": "8149",
+            "commentCount": 86,
+            "playCount": 8167,
             "title": "tenchuu"
         },
         {
             "url": "sm11454502",
-            "commentCount": "60",
-            "playCount": "2412",
+            "commentCount": 60,
+            "playCount": 2428,
             "title": "khachaturian 3"
         }
     ],
-    "datetime": "2019/01/23 00:22:12"
+    "datetime": "2019/02/10 22:57:37"
 }
