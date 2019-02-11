@@ -107,6 +107,6 @@ for jsonfile in sys.argv[1:]:
 		site['commentCount'] = commentCount
 
 	# write json
-	#file = open(jsonfile, 'w')
-	#json.dump(data, file, indent=4)
-	#file.close()
+	file = open(jsonfile, 'w')
+	json.dump(data, file, indent=4)
+	file.close()
