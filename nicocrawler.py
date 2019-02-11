@@ -52,7 +52,7 @@ for jsonfile in sys.argv[1:]:
 				playCount = int(match.group(1))
 				commentCount = int(match.group(2))
 
-		#print site['title'], playCount, commentCount
+		#print(site['title'], playCount, commentCount)
 
 		if commentCount == None:
 			metas = soup.find_all('script', attrs={'type':'application/ld+json'})
@@ -64,6 +64,27 @@ for jsonfile in sys.argv[1:]:
 						commentCount = js['commentCount']
 				except json.decoder.JSONDecodeError:
 					pass
+
+		if commentCount == None:
+			elements = soup.find_all('span')
+			class_name1 = None
+			class_name2 = None
+			for element in elements:
+				if element.has_attr('class'):
+					class_name1 = element['class']
+					if 'FormattedNumber' in class_name1:
+						if 'VideoViewCountMeta-counter' in class_name2:
+							playCount = int(element.string.replace(',', ''))
+						elif 'CommentCountMeta-counter' in class_name2:
+							commentCount = int(element.string.replace(',', ''))
+					else:
+						if 'VideoViewCountMeta-counter' in class_name1:
+							class_name2 = class_name1
+						elif 'CommentCountMeta-counter' in class_name1:
+							class_name2 = class_name1
+# <span class="VideoViewCountMeta-counter"><span class="FormattedNumber">54,741</span></span>
+# <span class="FormattedNumber">54,741</span>
+# <span class="CommentCountMeta-counter"><span class="FormattedNumber">1,254</span></span>
 
 		# update count
 		if commentCount == None:
@@ -86,6 +107,6 @@ for jsonfile in sys.argv[1:]:
 		site['commentCount'] = commentCount
 
 	# write json
-	file = open(jsonfile, 'w')
-	json.dump(data, file, indent=4)
-	file.close()
+	#file = open(jsonfile, 'w')
+	#json.dump(data, file, indent=4)
+	#file.close()
