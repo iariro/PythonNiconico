@@ -49,8 +49,8 @@ if commentCount == None:
 site = {}
 site['title'] = title
 site['url'] = movieid
-site['playCount'] = playCount
-site['commentCount'] = commentCount
+site['playCount'] = int(playCount)
+site['commentCount'] = int(commentCount)
 
 data['sites'].insert(0, site)
 
